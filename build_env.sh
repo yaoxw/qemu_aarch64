@@ -23,6 +23,12 @@ sudo apt install libncurses5-dev
 cp qemu-2.12.0.tar.xz .
 tar xvf qemu-2.12.0.tar.xz
 ./qemu-2.12.0/configure --target-list=arm-softmmu,aarch64-linux-user,arm-linux-user,aarch64-softmmu --audio-drv-list=alsa --enable-virtfs
+apt install python
+apt install pkg-config
+apt-get install zlib1g-dev
+apt install libasound2-dev
+apt install libglib2.0-dev
+apt install libpixman-1-dev
 make -j8
 sudo make install
 
